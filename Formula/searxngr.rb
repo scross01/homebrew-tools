@@ -12,7 +12,8 @@ class Searxngr < Formula
 
   def install
     venv = virtualenv_create(libexec, "python3.12")
-    venv.pip_install_and_link buildpath
+    venv.pip_install_and_link buildpath,
+      pip_args: ["--verbose"]
   end
 
   test do
