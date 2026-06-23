@@ -29,17 +29,30 @@ cd homebrew-tools
 
 ## Usage
 
-After tapping:
+### Important: `fetch` Name Conflict
+
+Homebrew core has a different `fetch` formula (from Gruntwork) that downloads GitHub assets. You must uninstall it first:
 
 ```bash
-# Install individual tools
-brew install searxngr
+brew uninstall fetch
+brew tap scross01/tools
 brew install fetch
+```
+
+### Installing All Tools
+
+```bash
+brew tap scross01/tools
+brew install searxngr fetch keeenv tabletop
+```
+
+### Installing Individually
+
+```bash
+brew install searxngr
+brew install fetch      # Requires uninstalling gruntwork/fetch first
 brew install keeenv
 brew install tabletop
-
-# Or install all at once
-brew install searxngr fetch keeenv tabletop
 ```
 
 ## Updating
