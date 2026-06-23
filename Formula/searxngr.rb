@@ -11,11 +11,14 @@ class Searxngr < Formula
   depends_on "python@3.12"
 
   def install
-    venv = virtualenv_create(libexec, "python3.12")
-    venv.pip_install buildpath,
-      build_isolation: false
-    venv.pip_install_and_link buildpath,
-      build_isolation: false
+    # Create virtualenv with pip using system Python
+    system "python3.12", "-m", "venv", "--system-site-packages", libexec.to_s
+    
+    # Install package with dependencies
+    system "#{libexec}/bin/pip", "install", "."
+    
+    # Create symlinks for bin scripts
+    bin.install_symlink Dir["#{libexec}/bin/*"]
   end
 
   test do
