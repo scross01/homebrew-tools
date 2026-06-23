@@ -17,8 +17,8 @@ class Fetch < Formula
     # Install package with dependencies
     system "#{libexec}/bin/pip", "install", "."
     
-    # Create symlinks for bin scripts
-    bin.install_symlink Dir["#{libexec}/bin/*"]
+    # Only symlink the application binary, not python/pip
+    bin.install_symlink "#{libexec}/bin/fetch"
   end
 
   test do
