@@ -20,12 +20,12 @@ cd homebrew-tools
 
 ## Available Formulas
 
-| Formula | Description | Python Version |
-|---------|-------------|----------------|
-| `searxngr` | Web search via SearXNG with JSON output | 3.12+ |
-| `fetch` | Lightweight web fetch CLI for clean, structured content | 3.12+ |
-| `keeenv` | Securely populate environment variables from KeePass database | 3.12+ |
-| `tabletop` | Parse and transform space-aligned CLI tables | 3.12+ |
+| Formula | Version | Description | Python Version |
+|---------|---------|-------------|----------------|
+| `searxngr` | 0.8.1 | Web search via SearXNG with JSON output | 3.12+ |
+| `fetch` | 0.2.0 | Lightweight web fetch CLI for clean, structured content | 3.12+ |
+| `keeenv` | 0.5.1 | Securely populate environment variables from KeePass database | 3.12+ |
+| `tabletop` | 0.1.0 | Parse and transform space-aligned CLI tables | 3.12+ |
 
 ## Usage
 
