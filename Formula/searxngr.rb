@@ -11,8 +11,11 @@ class Searxngr < Formula
   depends_on "python@3.12"
 
   def install
-    venv = virtualenv_create(libexec, "python3.12", pip: true)
-    venv.pip_install_and_link buildpath
+    venv = virtualenv_create(libexec, "python3.12")
+    venv.pip_install buildpath,
+      build_isolation: false
+    venv.pip_install_and_link buildpath,
+      build_isolation: false
   end
 
   test do
