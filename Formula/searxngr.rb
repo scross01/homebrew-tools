@@ -3,9 +3,9 @@ class Searxngr < Formula
 
   desc "Web search via SearXNG with JSON output"
   homepage "https://github.com/scross01/searxngr"
-  url "https://github.com/scross01/searxngr/archive/refs/tags/v0.8.1.tar.gz"
-  sha256 "abe5776b89f084be3f57c5ddffbc5e0f354102dd491844231c2b2c9d01f09c71"
-  version "0.8.1"
+  url "https://github.com/scross01/searxngr/archive/refs/tags/v0.9.0.tar.gz"
+  sha256 "c6eaf8581fedd12f1cb917d44ed85bfe4d1ca31b9536eabcc5775f01319bb174"
+  version "0.9.0"
   license "MIT"
 
   depends_on "python@3.12"
